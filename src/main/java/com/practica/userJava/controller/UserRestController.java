@@ -22,10 +22,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.practica.userJava.app.Utilities;
 import com.practica.userJava.entity.User;
 import com.practica.userJava.model.ResponseUsers;
 import com.practica.userJava.service.UserService;
-import com.practica.userJava.Utilities;
 
 @RestController
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT})

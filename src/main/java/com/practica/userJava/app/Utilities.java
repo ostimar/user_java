@@ -1,4 +1,4 @@
-package com.practica.userJava;
+package com.practica.userJava.app;
 
 import java.util.Set;
 

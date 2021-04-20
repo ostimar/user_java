@@ -80,7 +80,7 @@ public class AdminRestController
 								.map(GrantedAuthority::getAuthority)
 								.collect(Collectors.toList()))
 				.setIssuedAt(new Date(System.currentTimeMillis()))
-				.setExpiration(new Date(System.currentTimeMillis() + 1440000000))
+				.setExpiration(new Date(System.currentTimeMillis() + 86400000))
 				.signWith(SignatureAlgorithm.HS512,
 						secretKey.getBytes()).compact();
 		

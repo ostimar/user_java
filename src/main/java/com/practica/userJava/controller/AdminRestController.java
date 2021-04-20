@@ -57,7 +57,7 @@ public class AdminRestController
 			responseLogin.setAuthToken(getJWTToken(user.getEmail()));
             return ResponseEntity.ok().body(responseLogin); 
 		} catch (NoResultException | EmptyResultDataAccessException nree) {
-	            log.error("Usuario no encontrao", nree);
+	            log.error("Usuario no encontrado", nree);
 	            return new ResponseEntity<ResponseLogin>(HttpStatus.NOT_FOUND);
         } catch (Exception e) {
             log.error("Error en login", e);

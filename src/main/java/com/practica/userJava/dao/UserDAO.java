@@ -9,6 +9,7 @@ public interface UserDAO
     public List<User> findAll();
 
     public User findById(int id);
+    
     public User findByEmail(String email);
     
     public boolean existEmail(String email);

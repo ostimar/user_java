@@ -26,13 +26,13 @@ public class UserJavaApplication {
 
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
+			//El JWT se comprueba en todos los casos salvo en el login
 			http.csrf().disable()
 				.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authorizeRequests()
 				.antMatchers(HttpMethod.GET, "/api/v1/login").permitAll()
 				.anyRequest().authenticated();
-			http.cors();
-		
+			http.cors();		
 		}
 	}
 }

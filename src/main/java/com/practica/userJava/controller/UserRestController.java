@@ -105,9 +105,6 @@ public class UserRestController
                 return new ResponseEntity<ResponseUsers>(HttpStatus.INTERNAL_SERVER_ERROR);
             }
 
-    }
-	
-    
-    
+    }    
 	
 }

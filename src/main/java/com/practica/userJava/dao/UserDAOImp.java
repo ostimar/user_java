@@ -37,11 +37,6 @@ public class UserDAOImp implements UserDAO{
         currentSession.save(user); 		
 	}
 
-	@Override
-	public void deleteById(int id) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public boolean existEmail(String email) {

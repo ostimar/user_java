@@ -15,6 +15,4 @@ public interface UserService {
     public boolean existEmail(String email);
 
     public void save(User user);
-
-    public void deleteById(int id);
 }

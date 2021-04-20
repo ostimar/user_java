@@ -30,11 +30,6 @@ public class UserServiceImpl implements UserService {
         userDAO.save(user);		
 	}
 
-	@Override
-	public void deleteById(int id) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public User findByEmail(String email) {
@@ -43,7 +38,6 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public boolean existEmail(String email) {
-		// TODO Auto-generated method stub
 		return userDAO.existEmail(email);
 	}
 

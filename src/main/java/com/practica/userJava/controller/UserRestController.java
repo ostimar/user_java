@@ -93,7 +93,6 @@ public class UserRestController
             produces = { "application/json" }, 
             method = RequestMethod.GET)
     public ResponseEntity<ResponseUsers> userList() {
-        String accept = request.getHeader("Accept");
             try {
             	List<User> lUser = userService.findAll();
             	if(lUser.size() == 0)
